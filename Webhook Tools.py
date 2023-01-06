@@ -2,7 +2,18 @@ import requests,json
 from time import sleep
 
 
+banner ="""
+███████╗██████╗ ███████╗███████╗███████╗██╗  ██╗██╗████████╗
+██╔════╝██╔══██╗██╔════╝██╔════╝██╔════╝██║  ██║██║╚══██╔══╝  
+█████╗  ██████╔╝█████╗  █████╗  ███████╗███████║██║   ██║      
+██╔══╝  ██╔══██╗██╔══╝  ██╔══╝  ╚════██║██╔══██║██║   ██║    
+██║     ██║  ██║███████╗███████╗███████║██║  ██║██║   ██║     
+╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    
+Created By FreeShit ║ Developer: segations#2344 ║getfreeshit.today
+"""
+
 def main():
+    print(banner)
     print("""
 [S] Spammer
 [D] Deleter
@@ -19,6 +30,7 @@ def main():
         print("Not Valid Input")
         
 def spammer():
+    print(banner)
     headers = {
     'Content-Type': 'application/json'
     }
@@ -41,6 +53,7 @@ def spammer():
     main()
 
 def deleter():
+    print(banner)
     print("You Selected Module Deleter!")
     Webhook = input("Webhook: ")
     r = requests.delete(Webhook)
@@ -48,6 +61,7 @@ def deleter():
     main()
 
 def status():
+    print(banner)
     print("You Selected Module Status + Info!")
     Webhook = input("Webhook: ")
     r = requests.get(Webhook)
